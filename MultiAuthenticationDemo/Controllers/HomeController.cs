@@ -156,8 +156,14 @@ namespace MultiAuthenticationDemo.Controllers
         [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
         public IActionResult GetClaimsFromCookie()
         {
+            
             return Ok(new
             {
+                IdentityAuthenticationType = HttpContext.User.Identity?.AuthenticationType,
+                IdentityName = HttpContext.User.Identity?.Name,
+                IdentityIsAuthenticated = HttpContext.User.Identity?.IsAuthenticated,
+                HasClaimName = HttpContext.User.HasClaim(ClaimTypes.Name, "Will保哥"),
+                HasClaimEmailVerified = HttpContext.User.HasClaim("email_verified", "true"),
                 Claims = HttpContext.User.Claims.Select(c => new
                 {
                     Type = c.Type,
