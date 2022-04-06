@@ -42,7 +42,6 @@
 
     [Cannot redirect to the end session endpoint, the configuration may be missing or invalid OpenIdConnect SignOutAsync](https://stackoverflow.com/a/51986347/910074)
 
-
 ## 三種不同的 AuthenticationScheme
 
 此專案有同時設定三種 `AuthenticationScheme`：
@@ -135,8 +134,10 @@
 
 ## 相關連結
 
+- [Authentication: 官方原始碼中完整的實作](https://github.com/dotnet/aspnetcore/tree/v6.0.3/src/Security/Authentication)
 - [ASP.NET Core security topics | Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-3.1&WT.mc_id=DT-MVP-4015686)
-- [Overview of ASP.NET Core Authentication | Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-3.1&WT.mc_id=DT-MVP-4015686)
+- [**Overview of ASP.NET Core Authentication** | Microsoft Docs](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/?view=aspnetcore-3.1&WT.mc_id=DT-MVP-4015686)
+- [IAuthenticationService 介面 (Microsoft.AspNetCore.Authentication) | Microsoft Docs](https://docs.microsoft.com/zh-tw/dotnet/api/microsoft.aspnetcore.authentication.iauthenticationservice?view=aspnetcore-3.1&WT.mc_id=DT-MVP-4015686)
 - [ClaimsPrincipal 類別 (System.Security.Claims) | Microsoft Docs](https://docs.microsoft.com/zh-tw/dotnet/api/system.security.claims.claimsprincipal?view=net-6.0&WT.mc_id=DT-MVP-4015686)
 - [c# - What is the point of configuring DefaultScheme and DefaultChallengeScheme on ASP.NET Core? - Stack Overflow](https://stackoverflow.com/a/52493428/910074)
 - [AuthenticationHttpContextExtensions Class (Microsoft.AspNetCore.Authentication) | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.authenticationhttpcontextextensions?view=aspnetcore-2.0&WT.mc_id=DT-MVP-4015686)
